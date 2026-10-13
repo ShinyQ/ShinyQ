@@ -35,7 +35,7 @@ name:      Kurniadi Ahmad Wijaya
 role:      AI and Software Engineer @ Metrodata (MII)
 based_in:  Jakarta, Indonesia (UTC+7)
 shipping:  since 2019, full-time engineering since 2022
-focus:     [multi-agent RAG, realtime voice agents, document AI, AI code security]
+focus:     [multi-agent RAG, realtime voice agents, document AI, AI code security, agentic SDLC]
 domains:   [digital banking, fintech, enterprise SaaS]
 belief:    "An LLM feature is done when it is evaluated, guarded and observable."
 ```
@@ -110,10 +110,12 @@ I lead the delivery of **Azure-native AI platforms** at Metrodata for **12+ ente
 ## <img src="https://api.iconify.design/tabler/certificate.svg?color=%2322D3EE" width="26" align="top" /> &nbsp;Certified
 
 <p align="center">
-  <img src="https://img.shields.io/badge/AI--103-Azure_AI_Apps_and_Agents_Developer_Associate-22D3EE?style=for-the-badge&logo=microsoft&logoColor=white&labelColor=0B1020" alt="AI-103" />
+  <a href="https://learn.microsoft.com/api/credentials/share/en-us/KurniadiAhmadWijaya-0298/6BB32EB2B28BD602?sharingId=813CCE48E6426863"><img src="https://img.shields.io/badge/GH--600-GitHub_Certified:_Agentic_AI_Developer-22D3EE?style=for-the-badge&logo=github&logoColor=white&labelColor=0B1020" alt="GH-600 GitHub Certified: Agentic AI Developer" /></a>
   <br />
-  <img src="https://img.shields.io/badge/AI--901-Azure_AI_Fundamentals-6366F1?style=for-the-badge&logo=microsoft&logoColor=white&labelColor=0B1020" alt="AI-901" />
-  <img src="https://img.shields.io/badge/AZ--900-Azure_Fundamentals-8B5CF6?style=for-the-badge&logo=microsoft&logoColor=white&labelColor=0B1020" alt="AZ-900" />
+  <a href="https://learn.microsoft.com/api/credentials/share/en-us/KurniadiAhmadWijaya-0298/49FE315C859AD1F3?sharingId=813CCE48E6426863"><img src="https://img.shields.io/badge/AI--103-Azure_AI_Apps_and_Agents_Developer_Associate-6366F1?style=for-the-badge&logo=microsoft&logoColor=white&labelColor=0B1020" alt="AI-103" /></a>
+  <br />
+  <img src="https://img.shields.io/badge/AI--901-Azure_AI_Fundamentals-8B5CF6?style=for-the-badge&logo=microsoft&logoColor=white&labelColor=0B1020" alt="AI-901" />
+  <img src="https://img.shields.io/badge/AZ--900-Azure_Fundamentals-22D3EE?style=for-the-badge&logo=microsoft&logoColor=white&labelColor=0B1020" alt="AZ-900" />
 </p>
 
 <br />
