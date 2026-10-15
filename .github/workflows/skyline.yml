@@ -1,0 +1,37 @@
+name: Skyline
+
+on:
+  schedule:
+    - cron: "17 0 * * 1" # Mondays 00:17 UTC (07:17 WIB)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: skyline
+  cancel-in-progress: true
+
+jobs:
+  skyline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Draw the contribution skyline
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/skyline.py
+      - name: Commit when it changed
+        run: |
+          if git diff --quiet -- assets/hq-skyline.svg; then
+            echo "Skyline unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add assets/hq-skyline.svg
+          git commit -m "Redraw contribution skyline"
+          git push

@@ -1,6 +1,6 @@
-<!-- Header -->
+<!-- Header: assets/hq-header.svg, built by scripts/header.py -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=170&color=0:22D3EE,55:6366F1,100:8B5CF6&text=Kurniadi%20Ahmad%20Wijaya&fontColor=FFFFFF&fontSize=44&fontAlignY=34&desc=AI%20and%20Software%20Engineer%20%C2%B7%20Jakarta&descSize=18&descAlignY=56&animation=fadeIn" alt="Kurniadi Ahmad Wijaya, AI and Software Engineer" width="100%" />
+  <a href="https://kurniadi.pages.dev"><img src="assets/hq-header.svg" alt="Kurniadi Ahmad Wijaya, AI and Software Engineer, Jakarta" width="100%" /></a>
 </p>
 
 <p align="center">
@@ -69,11 +69,7 @@
   <img src="https://img.shields.io/badge/AZ--900-Azure_Fundamentals-22D3EE?style=flat-square&logo=microsoft&logoColor=white&labelColor=0B1020" alt="AZ-900 Azure Fundamentals" />
 </p>
 
-## <img src="https://api.iconify.design/tabler/chart-dots-3.svg?color=%2322D3EE" width="24" align="top" /> &nbsp;GitHub
-
+<!-- Footer: assets/hq-skyline.svg, redrawn weekly by .github/workflows/skyline.yml -->
 <p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=shinyq&show_icons=true&hide_border=true&bg_color=0B1020&title_color=22D3EE&icon_color=8B5CF6&text_color=C9D1D9&ring_color=22D3EE&rank_icon=github&line_height=22" alt="GitHub stats" />
-  <img height="160" src="https://streak-stats.demolab.com?user=ShinyQ&hide_border=true&background=0B1020&ring=8B5CF6&fire=22D3EE&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=22D3EE&sideLabels=C9D1D9&dates=8B949E&stroke=1F2937" alt="Contribution streak" />
+  <img src="assets/hq-skyline.svg" alt="My GitHub contributions over the last year as a neon skyline, one building per week" width="100%" />
 </p>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=80&section=footer&color=0:8B5CF6,45:6366F1,100:22D3EE" width="100%" alt="" />
