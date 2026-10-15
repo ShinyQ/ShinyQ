@@ -4,35 +4,29 @@
 </p>
 
 <p align="center">
-  <a href="https://kurniadi.pages.dev">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=900&color=22D3EE&center=true&vCenter=true&width=720&lines=Production-grade+AI+for+banking%2C+fintech+and+enterprise.;Multi-agent+RAG+%C2%B7+Realtime+voice+agents+%C2%B7+Document+AI;Evaluated%2C+guarded+and+observable+in+production." alt="Production-grade AI for banking, fintech and enterprise." />
-  </a>
-</p>
-
-<p align="center">
   <a href="https://kurniadi.pages.dev"><img src="https://img.shields.io/badge/Enter_the_HQ-kurniadi.pages.dev-22D3EE?style=for-the-badge&logo=threedotjs&logoColor=white&labelColor=0B1020" alt="Portfolio" /></a>
   <a href="https://kurniadi.pages.dev/en/cv"><img src="https://img.shields.io/badge/CV-Read-6366F1?style=for-the-badge&logo=readdotcv&logoColor=white&labelColor=0B1020" alt="CV" /></a>
   <a href="https://www.linkedin.com/in/kurniadiwijaya"><img src="https://img.shields.io/badge/LinkedIn-kurniadiwijaya-6366F1?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0B1020" alt="LinkedIn" /></a>
   <a href="mailto:kurniadiahmadwijaya@gmail.com"><img src="https://img.shields.io/badge/Email-Say_hello-8B5CF6?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0B1020" alt="Email" /></a>
 </p>
 
-<!-- About: portfolio hero next to whoami -->
+<!-- About: text-free hero next to the story -->
 <table>
   <tr>
     <td width="52%" valign="middle">
-      <a href="https://kurniadi.pages.dev"><img src="https://kurniadi.pages.dev/og/en.jpg" alt="ShinyQ HQ: a playable 3D neon tower portfolio" width="100%" /></a>
+      <a href="https://kurniadi.pages.dev"><img src="https://kurniadi.pages.dev/og-assets/floor-L3.jpg" alt="The Labs floor of ShinyQ HQ, a playable 3D neon tower" width="100%" /></a>
       <br />
-      <sub><b>ShinyQ HQ</b>: my portfolio as a playable 3D neon tower. Drive the rover through 5 floors, ask the HQ AI, or switch to the <b>Classic site</b>.</sub>
+      <sub>My career as a game: five floors, one rover, an AI concierge. The Classic site is one click away.</sub>
     </td>
-    <td width="48%" valign="top">
+    <td width="48%" valign="middle">
 
-**AI and Software Engineer @ Metrodata (MII)**<br />
-<sub>Jakarta, Indonesia (UTC+7) · shipping since 2019</sub>
+**Now** · leading Azure-native AI delivery at **Metrodata (MII)** for **12+ enterprises**
 
-I lead delivery of **Azure-native AI platforms** for **12+ enterprise clients** in banking, automotive, mining and food manufacturing. Before that: backends and full-stack products at MNC, Jatis and Jenius.
+**Built** · realtime voice agents, cited RAG, fraud document AI, AI code security
 
-- **Focus:** multi-agent RAG, realtime voice agents, document AI, AI code security, agentic SDLC
-- **Belief:** *an LLM feature is done when it is evaluated, guarded and observable.*
+**Before** · backends for e-commerce, travel and digital banking since 2019 (MNC, Jatis, Jenius)
+
+**Rule** · an LLM feature isn't done until it's evaluated, guarded and observable
 
 `800+` merged PRs in 2026 · `20` competition placings, `7` wins
 
@@ -54,7 +48,7 @@ I lead delivery of **Azure-native AI platforms** for **12+ enterprise clients** 
 ## <img src="https://api.iconify.design/tabler/stack-2.svg?color=%2322D3EE" width="24" align="top" /> &nbsp;Stack and certifications
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=py,ts,go,java,fastapi,nextjs,react,tailwind,spring,azure,docker,githubactions,postgres,redis,mongodb,kafka,rabbitmq,elasticsearch,threejs&perline=19&theme=dark" alt="Python, TypeScript, Go, Java, FastAPI, Next.js, React, Tailwind, Spring, Azure, Docker, GitHub Actions, PostgreSQL, Redis, MongoDB, Kafka, RabbitMQ, Elasticsearch, three.js" width="100%" />
+  <img src="https://skillicons.dev/icons?i=py,ts,js,go,php,java,fastapi,django,flask,nodejs,express,bun,nextjs,react,vue,tailwind,laravel,spring,threejs,postgres,mysql,redis,mongodb,prisma,azure,aws,cloudflare,docker,kubernetes,githubactions,kafka,rabbitmq,elasticsearch,grafana,pytorch,tensorflow&perline=12&theme=dark" alt="Languages, frameworks, data stores, cloud, DevOps and ML tools" />
 </p>
 
 <p align="center">
