@@ -14,7 +14,7 @@
 <table>
   <tr>
     <td width="52%" valign="middle">
-      <a href="https://kurniadi.pages.dev"><img src="https://kurniadi.pages.dev/og-assets/floor-L3.jpg" alt="The Labs floor of ShinyQ HQ, a playable 3D neon tower" width="100%" /></a>
+      <a href="https://kurniadi.pages.dev"><img src="https://kurniadi.pages.dev/og-assets/floor-L3.jpg?v=2026-10-16" alt="The Labs floor of ShinyQ HQ, a playable 3D neon tower" width="100%" /></a>
       <br />
       <sub>My career as a game: five floors, one rover, an AI concierge. The Classic site is one click away.</sub>
     </td>
