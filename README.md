@@ -64,6 +64,7 @@
 
 <p align="center">
   <a href="https://learn.microsoft.com/api/credentials/share/en-us/KurniadiAhmadWijaya-0298/6BB32EB2B28BD602?sharingId=813CCE48E6426863"><img src="https://img.shields.io/badge/GH--600-Agentic_AI_Developer-22D3EE?style=flat-square&logo=github&logoColor=white&labelColor=0B1020" alt="GH-600 GitHub Certified: Agentic AI Developer" /></a>
+  <a href="https://www.credly.com/badges/208e4cd7-afa5-4af7-ac0d-e41690d03333"><img src="https://img.shields.io/badge/Google-Gen_AI_Leader-8B5CF6?style=flat-square&logo=google&logoColor=white&labelColor=0B1020" alt="Google Certified: Generative AI Leader" /></a>
   <a href="https://learn.microsoft.com/api/credentials/share/en-us/KurniadiAhmadWijaya-0298/49FE315C859AD1F3?sharingId=813CCE48E6426863"><img src="https://img.shields.io/badge/AI--103-Azure_AI_Apps_and_Agents_Developer-6366F1?style=flat-square&logo=microsoft&logoColor=white&labelColor=0B1020" alt="AI-103 Azure AI Apps and Agents Developer Associate" /></a>
   <img src="https://img.shields.io/badge/AI--901-Azure_AI_Fundamentals-8B5CF6?style=flat-square&logo=microsoft&logoColor=white&labelColor=0B1020" alt="AI-901 Azure AI Fundamentals" />
   <img src="https://img.shields.io/badge/AZ--900-Azure_Fundamentals-22D3EE?style=flat-square&logo=microsoft&logoColor=white&labelColor=0B1020" alt="AZ-900 Azure Fundamentals" />
