@@ -69,7 +69,7 @@ def tower() -> str:
 def svg() -> str:
     rise = 5 * 38 - 38  # four floor steps of fh+gap
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-labelledby="title">
-<title id="title">Kurniadi Ahmad Wijaya, AI and Software Engineer, Jakarta</title>
+<title id="title">Kurniadi Ahmad Wijaya, Forward Deployed AI Engineer, Jakarta</title>
 <defs>
 <style>
 @font-face{{font-family:"HQ Mono";src:url(data:font/woff2;base64,{font("jetbrains-mono-subset.woff2")}) format("woff2");font-weight:400 700}}
@@ -111,7 +111,7 @@ def svg() -> str:
 <text class="t" x="{W / 2}" y="22" fill="{MUTED}" font-size="12" text-anchor="middle">visitor@shinyq-hq: ~</text>
 {boot_lines()}
 <g class="late"><text class="name" x="44" y="250" fill="url(#neon)" filter="url(#glow)" opacity=".45">KURNIADI AHMAD WIJAYA</text><text class="name" x="44" y="250" fill="url(#neon)">KURNIADI AHMAD WIJAYA</text></g>
-<text class="t late2" x="46" y="282" fill="{CYAN}" font-size="16">&gt; AI and Software Engineer <tspan fill="{MUTED}">·</tspan> Jakarta<tspan class="cursor"> _</tspan></text>
+<text class="t late2" x="46" y="282" fill="{CYAN}" font-size="16">&gt; Forward Deployed AI Engineer <tspan fill="{MUTED}">·</tspan> Jakarta<tspan class="cursor"> _</tspan></text>
 {tower()}
 </g>
 <rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="16" fill="none" stroke="{INDIGO}" stroke-opacity=".35"/>
