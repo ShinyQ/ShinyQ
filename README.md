@@ -53,12 +53,12 @@
 
 ## <img src="https://api.iconify.design/tabler/rocket.svg?color=%2322D3EE" width="24" align="top" alt="Rocket icon" /> &nbsp;Featured builds
 
-| | Build | Result |
-|---|---|---|
-| 🎙️ | **[Realtime Voice AI Contact Center](https://shinyq.my.id/en/labs/voice-ai-contact-center?view=classic)**<br /><sub>ARIA: interruptible realtime voice, grounded answers, handover to a human</sub> | <sub>knowledge-lookup interruption, controlled A/B, n=4 calls per arm</sub><br />**~2 s → ~0.2 s** |
-| 🛡️ | **[AI Code Security Platform](https://shinyq.my.id/en/labs/ai-code-security-platform?view=classic)**<br /><sub>Pris.AI: 8 scanners per PR in a 100+ repo org, AI triage, a fix agent behind human review</sub> | <sub>PRs reviewed using its scan results, 24 repos, by Oct 2026</sub><br />**628** |
-| 🔎 | **[AI Fraud Document Review](https://shinyq.my.id/en/labs/fraud-review-platform?view=classic)**<br /><sub>MII Fraud Detection: OCR plus two-pass LLM review; the hybrid engine stays in shadow mode</sub> | <sub>false positives, offline development set</sub><br />**90.9% → 36.4%** |
-| 📦 | **[Vendor Management Portal](https://shinyq.my.id/en/labs/vendor-management-portal?view=classic)**<br /><sub>eVendor: POs, delivery acceptance, invoices, tax checks and approvals for Metrodata</sub> | <sub>sole engineer, first commit to deploy</sub><br />**6 weeks** |
+| Build | Result |
+|---|---|
+| 🎙️ **[Realtime Voice AI Contact Center](https://shinyq.my.id/en/labs/voice-ai-contact-center?view=classic)**<br /><sub>ARIA: interruptible realtime voice, grounded answers, human handover</sub> | **~2 s → ~0.2 s** interruption<br /><sub>controlled A/B, n=4 calls per arm</sub> |
+| 🛡️ **[AI Code Security Platform](https://shinyq.my.id/en/labs/ai-code-security-platform?view=classic)**<br /><sub>Pris.AI: 8 scanners per PR in a 100+ repo org, AI triage, a fix agent</sub> | **628** PRs reviewed with its scans<br /><sub>24 repos, by Oct 2026; fix PRs need human review</sub> |
+| 🔎 **[AI Fraud Document Review](https://shinyq.my.id/en/labs/fraud-review-platform?view=classic)**<br /><sub>MII Fraud Detection: OCR plus two-pass LLM review, evaluation gates</sub> | **90.9% → 36.4%** false positives<br /><sub>offline development set; hybrid engine in shadow mode only</sub> |
+| 📦 **[Vendor Management Portal](https://shinyq.my.id/en/labs/vendor-management-portal?view=classic)**<br /><sub>eVendor: POs, delivery acceptance, invoices, tax checks, approvals</sub> | **6 weeks** first commit to deploy<br /><sub>as the sole engineer</sub> |
 
 <!-- writing:start -->
 <p align="center"><sub><b>Latest writing</b> &nbsp;·&nbsp; <a href="https://shinyq.my.id/en/blog/ten-very-hard-benchmark-tasks-in-ten-days?view=classic">Ten Very Hard Benchmark Tasks in Ten Days</a> &nbsp;·&nbsp; <a href="https://shinyq.my.id/en/blog/aria-acs-to-livekit?view=classic">Moving ARIA From ACS to LiveKit</a> &nbsp;·&nbsp; <a href="https://shinyq.my.id/en/library?view=classic">All writing →</a></sub></p>
@@ -67,7 +67,7 @@
 ## <img src="https://api.iconify.design/tabler/stack-2.svg?color=%2322D3EE" width="24" align="top" alt="Stack icon" /> &nbsp;Stack and certifications
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=py,ts,fastapi,nextjs,react,postgres,redis,azure,docker,kubernetes,githubactions,pytorch&perline=12&theme=dark" alt="Python, TypeScript, FastAPI, Next.js, React, PostgreSQL, Redis, Azure, Docker, Kubernetes, GitHub Actions and PyTorch" />
+  <img src="https://skillicons.dev/icons?i=py,ts,js,go,php,java,fastapi,django,flask,nodejs,express,bun,nextjs,react,vue,tailwind,laravel,spring,threejs,postgres,mysql,redis,mongodb,prisma,azure,aws,cloudflare,docker,kubernetes,githubactions,kafka,rabbitmq,elasticsearch,grafana,pytorch,tensorflow&perline=18&theme=dark" alt="Languages, frameworks, data stores, cloud, DevOps and ML tools: Python, TypeScript, JavaScript, Go, PHP, Java, FastAPI, Django, Flask, Node.js, Express, Bun, Next.js, React, Vue, Tailwind CSS, Laravel, Spring, Three.js, PostgreSQL, MySQL, Redis, MongoDB, Prisma, Azure, AWS, Cloudflare, Docker, Kubernetes, GitHub Actions, Kafka, RabbitMQ, Elasticsearch, Grafana, PyTorch and TensorFlow" width="100%" />
 </p>
 
 <p align="center">
