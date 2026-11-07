@@ -33,9 +33,9 @@
     </td>
     <td width="50%" valign="middle">
 
-**Now** · Technical Consultant, Software & AI at **Metrodata (MII)**, leading Azure-native AI delivery from architecture to production
+**Now** · Technical Consultant, Software & AI at **Metrodata (MII)**, leading Azure-native AI delivery
 
-**Also** · AI Benchmark Engineer and Native Language Specialist (Indonesian) at **LILT**, building Terminal-Bench tasks
+**Also** · AI Benchmark Engineer and Native Language Specialist (Indonesian) at **LILT**
 
 **Built** · realtime voice agents, cited RAG, fraud document AI, AI code security
 
