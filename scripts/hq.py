@@ -62,6 +62,21 @@ def text(s: str) -> str:
     return escape(s, quote=False)
 
 
+@cache
+def _display_at(wght: int, wdth: int):
+    from fontTools.ttLib import TTFont  # only the UI kit needs fonttools: pip install fonttools brotli
+    from fontTools.varLib import instancer
+
+    font = instancer.instantiateVariableFont(TTFont(ASSETS / "fonts" / "archivo-display.woff2"), {"wght": wght, "wdth": wdth})
+    return font.getBestCmap(), font["hmtx"], font["head"].unitsPerEm
+
+
+def measure(s: str, size: float, wght: int = 600, wdth: int = 92) -> float:
+    """Advance width of `s` in the embedded display font, without kerning (close enough for padding)."""
+    cmap, hmtx, upm = _display_at(wght, wdth)
+    return sum(hmtx[cmap[ord(c)]][0] for c in s) * size / upm
+
+
 def write(path: Path, svg: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(svg)

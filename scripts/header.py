@@ -9,7 +9,7 @@ import random
 
 from hq import ASSETS, DISPLAY, MONO, THEMES, asset_name, font_faces, neon_gradient, write
 
-W, H = 1200, 340
+W, H = 1200, 324
 BOOT = [
     ("power on", "tower online"),
     ("L1 Lobby", "Highlights Hall, Rover, Ask"),
@@ -23,7 +23,7 @@ FLOORS = ["L1", "L2", "L3", "L4", "RF"]
 DOOR_AT, DOOR_FOR = 0.25, 0.85
 FIRST, STEP = 0.85, 0.28
 NAME_AT = FIRST + STEP * (len(BOOT) + 1) + 0.1
-X0, TW, FH, GAP, BASE = 950, 160, 30, 8, 292
+X0, TW, FH, GAP, BASE = 950, 160, 30, 8, 280
 RIDE = 4 * (FH + GAP)
 
 
@@ -46,7 +46,7 @@ def boot_lines(t: dict) -> str:
 
 
 def readout(t: dict) -> str:
-    x, y, w, h = 800, 112, 104, 70
+    x, y, w, h = 800, 100, 104, 70
     parts = [
         f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="10" fill="{t["panel"]}" stroke="{t["line"]}"/>',
         f'<text class="t" x="{x + 14}" y="{y + 20}" font-size="10" letter-spacing="3" fill="{t["muted"]}">FLOOR</text>',
@@ -135,7 +135,8 @@ def svg(theme: str) -> str:
 <defs>
 <style>
 {font_faces(mono=True, display=True)}
-.t{{font-family:{MONO};font-size:15px}}
+svg{{font-size:15px}}
+.t{{font-family:{MONO}}}
 .d{{font-family:{DISPLAY};font-weight:800;font-stretch:80%;font-variation-settings:"wght" 800,"wdth" 80}}
 .name{{font-family:{DISPLAY};font-weight:800;font-stretch:76%;font-variation-settings:"wght" 800,"wdth" 76;font-size:68px;letter-spacing:.5px}}
 .in{{animation:fade .22s ease-out backwards}}
@@ -192,14 +193,14 @@ def svg(theme: str) -> str:
 {boot_lines(t)}
 {readout(t)}
 {tower(t)}
-<g class="rise" style="animation-delay:{NAME_AT:.2f}s"><text class="name" x="42" y="282" fill="url(#neon)" filter="url(#glow)" opacity="{t["glow"]}">KURNIADI AHMAD WIJAYA</text><text class="name" x="42" y="282" fill="url(#neon)">KURNIADI AHMAD WIJAYA</text></g>
-<text class="t rise" x="45" y="318" font-size="16" style="animation-delay:{NAME_AT + 0.3:.2f}s"><tspan fill="{t["cyan"]}">&gt; Forward Deployed AI Engineer</tspan><tspan fill="{t["dim"]}"> · </tspan><tspan fill="{t["text"]}">Jakarta</tspan><tspan fill="{t["dim"]}"> · </tspan><tspan fill="{t["violet"]}">shinyq.my.id</tspan><tspan class="cursor" fill="{t["cyan"]}"> _</tspan></text>
+<g class="rise" style="animation-delay:{NAME_AT:.2f}s"><text class="name" x="42" y="270" fill="url(#neon)" filter="url(#glow)" opacity="{t["glow"]}">KURNIADI AHMAD WIJAYA</text><text class="name" x="42" y="270" fill="url(#neon)">KURNIADI AHMAD WIJAYA</text></g>
+<text class="t rise" x="45" y="304" font-size="16" style="animation-delay:{NAME_AT + 0.3:.2f}s"><tspan fill="{t["cyan"]}">&gt; Forward Deployed AI Engineer</tspan><tspan fill="{t["dim"]}"> · </tspan><tspan fill="{t["text"]}">Jakarta</tspan><tspan fill="{t["dim"]}"> · </tspan><tspan fill="{t["violet"]}">shinyq.my.id</tspan><tspan class="cursor" fill="{t["cyan"]}"> _</tspan></text>
 <g class="doors">{doors(t)}</g>
 <rect width="{W}" height="34" fill="{t["bar"]}"/>
 <line x1="0" y1="34" x2="{W}" y2="34" stroke="{t["line"]}"/>
 <circle cx="24" cy="17" r="5.5" fill="#F87171"/><circle cx="42" cy="17" r="5.5" fill="#FBBF24"/><circle cx="60" cy="17" r="5.5" fill="#34D399"/>
 <text class="t" x="{W / 2}" y="22" fill="{t["muted"]}" font-size="12" text-anchor="middle">visitor@shinyq.my.id: ~</text>
-<text class="t" x="{W - 24}" y="22" fill="{t["dim"]}" font-size="11" letter-spacing="2" text-anchor="end">EN · ID</text>
+<text class="t" x="{W - 24}" y="22" fill="{t["dim"]}" font-size="11" style="letter-spacing:2px" text-anchor="end">EN · ID</text>
 </g>
 <rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="18" fill="none" stroke="{t["indigo"]}" stroke-opacity=".35"/>
 </svg>
