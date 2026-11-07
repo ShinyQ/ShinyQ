@@ -1,4 +1,4 @@
-"""Builds assets/hq-skyline.svg: the last 52 weeks of contributions as a neon skyline.
+"""Builds assets/hq-skyline.svg (dark) and assets/hq-skyline-light.svg: the last 52 weeks of contributions as a neon skyline.
 
 One building per week, height from that week's contribution count, with the
 ShinyQ HQ rover driving along the street. Window lights are deterministic per
@@ -7,18 +7,15 @@ week so a rerun with the same data writes the same file.
 Needs GITHUB_TOKEN (any token that can read the public GraphQL API).
 Run: GITHUB_TOKEN=$(gh auth token) python3 scripts/skyline.py
 """
-import base64
 import json
 import math
 import os
 import random
 import urllib.request
-from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+from hq import ASSETS, MONO, THEMES, asset_name, font_faces, neon_gradient, write
+
 USER = os.environ.get("SKYLINE_USER", "ShinyQ")
-CYAN, INDIGO, VIOLET = "#22D3EE", "#6366F1", "#8B5CF6"
-BG, MUTED = "#0B1020", "#7D8590"
 W, H, STREET = 1200, 230, 176
 
 QUERY = """query($login:String!){user(login:$login){contributionsCollection{contributionCalendar{
@@ -41,11 +38,8 @@ def fetch() -> tuple[int, list[tuple[str, int]]]:
     return cal["totalContributions"], weeks[-52:]
 
 
-def font() -> str:
-    return base64.b64encode((ROOT / "assets" / "fonts" / "jetbrains-mono-subset.woff2").read_bytes()).decode()
-
-
-def svg(total: int, weeks: list[tuple[str, int]]) -> str:
+def svg(theme: str, total: int, weeks: list[tuple[str, int]]) -> str:
+    t = THEMES[theme]
     peak = max((c for _, c in weeks), default=1) or 1
     slot = (W - 80) / len(weeks)
     bw = slot * 0.78
@@ -60,45 +54,45 @@ def svg(total: int, weeks: list[tuple[str, int]]) -> str:
         for wy in range(int(y) + 6, STREET - 6, 8):
             for wx in (x + bw * 0.25, x + bw * 0.6):
                 if rng.random() < 0.4:
-                    parts.append(f'<rect x="{wx:.1f}" y="{wy}" width="2.6" height="2.6" fill="#E0F2FE" opacity=".75"/>')
+                    parts.append(f'<rect x="{wx:.1f}" y="{wy}" width="2.6" height="2.6" fill="{t["window"]}" opacity=".75"/>')
     rover = (
-        f'<g class="rover"><rect x="0" y="{STREET - 21}" width="34" height="19" rx="5" fill="#0F172A" stroke="{CYAN}" stroke-width="2"/>'
-        f'<rect x="6" y="{STREET - 16}" width="22" height="9" rx="2" fill="{CYAN}"/>'
-        f'<circle cx="12" cy="{STREET - 11.5}" r="1.6" fill="{BG}"/><circle cx="22" cy="{STREET - 11.5}" r="1.6" fill="{BG}"/>'
-        f'<line x1="17" y1="{STREET - 21}" x2="17" y2="{STREET - 28}" stroke="{CYAN}" stroke-width="1.5"/><circle cx="17" cy="{STREET - 29}" r="2" fill="#F472B6"/>'
-        f'<circle cx="8" cy="{STREET}" r="4" fill="{INDIGO}"/><circle cx="26" cy="{STREET}" r="4" fill="{INDIGO}"/></g>'
+        f'<g class="rover"><rect x="0" y="{STREET - 21}" width="34" height="19" rx="5" fill="{t["panel"]}" stroke="{t["cyan"]}" stroke-width="2"/>'
+        f'<rect x="6" y="{STREET - 16}" width="22" height="9" rx="2" fill="{t["cyan"]}"/>'
+        f'<circle cx="12" cy="{STREET - 11.5}" r="1.6" fill="{t["bg"]}"/><circle cx="22" cy="{STREET - 11.5}" r="1.6" fill="{t["bg"]}"/>'
+        f'<line x1="17" y1="{STREET - 21}" x2="17" y2="{STREET - 28}" stroke="{t["cyan"]}" stroke-width="1.5"/><circle cx="17" cy="{STREET - 29}" r="2" fill="{t["warn"]}"/>'
+        f'<circle cx="8" cy="{STREET}" r="4" fill="{t["indigo"]}"/><circle cx="26" cy="{STREET}" r="4" fill="{t["indigo"]}"/></g>'
     )
     caption = f"{total:,} contributions in the last year · one building per week · the HQ grows with every merge"
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-labelledby="title">
 <title id="title">{total} GitHub contributions in the last year, drawn as a skyline with one building per week</title>
 <defs>
 <style>
-@font-face{{font-family:"HQ Mono";src:url(data:font/woff2;base64,{font()}) format("woff2");font-weight:400 700}}
-.t{{font-family:"HQ Mono",ui-monospace,Menlo,Consolas,monospace;font-size:14px}}
+{font_faces(mono=True)}
+.t{{font-family:{MONO};font-size:14px}}
 .rover{{animation:drive 14s linear infinite}}
 @keyframes drive{{from{{transform:translateX(-60px)}}to{{transform:translateX({W + 20}px)}}}}
 @media (prefers-reduced-motion:reduce){{.rover{{animation:none;transform:translateX({W / 2 - 17}px)}}}}
 </style>
-<linearGradient id="neon" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="{CYAN}"/><stop offset=".6" stop-color="{INDIGO}"/><stop offset="1" stop-color="{VIOLET}"/></linearGradient>
-<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="{INDIGO}" stroke-opacity=".08"/></pattern>
+{neon_gradient(t, vertical=True)}
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="{t["indigo"]}" stroke-opacity="{t["grid"]}"/></pattern>
 <filter id="glow" x="-5%" y="-200%" width="110%" height="500%"><feGaussianBlur stdDeviation="3"/></filter>
 <clipPath id="card"><rect width="{W}" height="{H}" rx="16"/></clipPath>
 </defs>
 <g clip-path="url(#card)">
-<rect width="{W}" height="{H}" fill="{BG}"/><rect width="{W}" height="{H}" fill="url(#grid)"/>
+<rect width="{W}" height="{H}" fill="{t["bg"]}"/><rect width="{W}" height="{H}" fill="url(#grid)"/>
 {"".join(parts)}
-<line x1="20" x2="{W - 20}" y1="{STREET + 1}" y2="{STREET + 1}" stroke="{CYAN}" stroke-width="3" filter="url(#glow)" opacity=".8"/>
-<line x1="20" x2="{W - 20}" y1="{STREET + 1}" y2="{STREET + 1}" stroke="{CYAN}" stroke-width="1.5"/>
+<line x1="20" x2="{W - 20}" y1="{STREET + 1}" y2="{STREET + 1}" stroke="{t["cyan"]}" stroke-width="3" filter="url(#glow)" opacity="{t["glow"] + .25:.2f}"/>
+<line x1="20" x2="{W - 20}" y1="{STREET + 1}" y2="{STREET + 1}" stroke="{t["cyan"]}" stroke-width="1.5"/>
 {rover}
-<text class="t" x="{W / 2}" y="{H - 22}" fill="{MUTED}" text-anchor="middle">{caption}</text>
+<text class="t" x="{W / 2}" y="{H - 22}" fill="{t["muted"]}" text-anchor="middle">{caption}</text>
 </g>
-<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="16" fill="none" stroke="{INDIGO}" stroke-opacity=".35"/>
+<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="16" fill="none" stroke="{t["indigo"]}" stroke-opacity=".35"/>
 </svg>
 '''
 
 
 if __name__ == "__main__":
     total, weeks = fetch()
-    out = ROOT / "assets" / "hq-skyline.svg"
-    out.write_text(svg(total, weeks))
-    print(f"wrote {out.relative_to(ROOT)}: {total} contributions over {len(weeks)} weeks")
+    print(f"{total} contributions over {len(weeks)} weeks")
+    for theme in THEMES:
+        write(ASSETS / asset_name("hq-skyline", theme), svg(theme, total, weeks))
