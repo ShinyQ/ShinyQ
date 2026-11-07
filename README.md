@@ -67,7 +67,7 @@
 ## <img src="https://api.iconify.design/tabler/stack-2.svg?color=%2322D3EE" width="24" align="top" alt="Stack icon" /> &nbsp;Stack and certifications
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=py,ts,go,fastapi,nextjs,react,tailwind,postgres,redis,azure,docker,kubernetes,githubactions,pytorch&perline=14&theme=dark" alt="Python, TypeScript, Go, FastAPI, Next.js, React, Tailwind CSS, PostgreSQL, Redis, Azure, Docker, Kubernetes, GitHub Actions and PyTorch" />
+  <img src="https://skillicons.dev/icons?i=py,ts,fastapi,nextjs,react,postgres,redis,azure,docker,kubernetes,githubactions,pytorch&perline=12&theme=dark" alt="Python, TypeScript, FastAPI, Next.js, React, PostgreSQL, Redis, Azure, Docker, Kubernetes, GitHub Actions and PyTorch" />
 </p>
 
 <p align="center">
