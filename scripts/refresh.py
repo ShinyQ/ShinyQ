@@ -47,7 +47,7 @@ def facts() -> str:
         parts.append(f"`{stat['value']}` {label}")
     if not parts:
         raise SystemExit("no headline stats found; check FACTS against site-content.json")
-    return " · ".join(parts)
+    return "&nbsp;· ".join(parts)
 
 
 def writing() -> str:
