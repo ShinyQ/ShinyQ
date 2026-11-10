@@ -61,7 +61,7 @@
 | 📦 **[Vendor Management Portal](https://shinyq.my.id/en/labs/vendor-management-portal?view=classic)**<br /><sub>eVendor: POs, delivery acceptance, invoices, tax checks, approvals</sub> | **6 weeks** first commit to deploy<br /><sub>as the sole engineer</sub> |
 
 <!-- writing:start -->
-<p align="center"><sub><b>Latest writing</b> &nbsp;·&nbsp; <a href="https://shinyq.my.id/en/blog/ten-very-hard-benchmark-tasks-in-ten-days?view=classic">Ten Very Hard Benchmark Tasks in Ten Days</a> &nbsp;·&nbsp; <a href="https://shinyq.my.id/en/blog/aria-acs-to-livekit?view=classic">Grounded Voice AI: From ACS to LiveKit</a> &nbsp;·&nbsp; <a href="https://shinyq.my.id/en/library?view=classic">All writing →</a></sub></p>
+<p align="center"><sub><b>Latest writing</b> &nbsp;·&nbsp; <a href="https://shinyq.my.id/en/blog/before-it-looked-like-talent?view=classic">Before It Looked Like Talent</a> &nbsp;·&nbsp; <a href="https://shinyq.my.id/en/blog/ten-very-hard-benchmark-tasks-in-ten-days?view=classic">Ten Very Hard Benchmark Tasks in Ten Days</a> &nbsp;·&nbsp; <a href="https://shinyq.my.id/en/library?view=classic">All writing →</a></sub></p>
 <!-- writing:end -->
 
 ## <img src="https://api.iconify.design/tabler/stack-2.svg?color=%2322D3EE" width="24" align="top" alt="Stack icon" /> &nbsp;Stack and certifications
